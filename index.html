@@ -1,38 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethereal Pad Creator</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Ethereal Pad Creator</h1>
-        <button id="playPad">Play Pad</button>
-        <button id="stopPad">Stop Pad</button>
-        <div>
-            <label for="waveform">Waveform:</label>
-            <select id="waveform">
-                <option value="sine">Sine</option>
-                <option value="square">Square</option>
-                <option value="sawtooth">Sawtooth</option>
-                <option value="triangle">Triangle</option>
-            </select>
+<div id="synthesizer">
+    <div class="display">Retro Synth</div>
+    <div class="controls">
+        <div class="knobs">
+            <div class="knob">Freq</div>
+            <div class="knob">Res</div>
+            <div class="knob">Gain</div>
         </div>
-        <div>
-            <label for="reverbLevel">Reverb Level:</label>
-            <input type="range" id="reverbLevel" min="0" max="1" step="0.01" value="0.5">
-        </div>
-        <div>
-            <label for="delayTime">Delay Time (seconds):</label>
-            <input type="range" id="delayTime" min="0" max="1" step="0.01" value="0.2">
-        </div>
-        <div>
-            <label for="feedbackLevel">Delay Feedback:</label>
-            <input type="range" id="feedbackLevel" min="0" max="0.9" step="0.05" value="0.5">
+        <div class="sliders">
+            <div class="slider"><input type="range" vertical></div>
+            <div class="slider"><input type="range" vertical></div>
+            <div class="slider"><input type="range" vertical></div>
         </div>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
+    <button id="playPad">Play</button>
+</div>
