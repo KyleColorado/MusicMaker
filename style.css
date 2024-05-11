@@ -1,40 +1,66 @@
-/* styles.css */
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-}
-
-.container {
-    text-align: center;
-    background-color: white;
+#synthesizer {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    background-color: #007BFF;
-    color: white;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-select {
+.display {
     padding: 10px;
-    margin-top: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #222;
+    border: 1px solid #555;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.knob {
+    width: 60px;
+    height: 60px;
+    background-color: #444;
+    border-radius: 50%;
+    border: 3px solid #666;
+    margin: 10px;
+    text-align: center;
+    line-height: 54px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.slider input[type="range"] {
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 80px;
+    background-color: #444;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (cross-browser) */
+    transition: opacity .15s ease-in-out;
+}
+
+.slider input[type="range"]:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+#playPad {
+    background-color: #5C946E;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.slider {
+    padding: 0 10px;
 }
